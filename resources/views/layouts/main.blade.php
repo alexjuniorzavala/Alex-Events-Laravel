@@ -10,7 +10,10 @@
         <!-- Styles -->
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
-        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/js/script.js"></script>
     </head> 
     <body>
         <header>
@@ -55,10 +58,22 @@
                 </div>
             </nav>
         </header>
-        @yield('content')
+        <main>
+            <div class="conteiner-fluid">
+                <div class="row">
+                    @if(session('msg'))
+                        <p class="msg">{!! session('msg') !!}</p>
+                    @endif
+                    @yield('content')
+                </div>
+            </div>
+        </main>
         <footer>
             <p>Alex Events &copy; 2024</p>
+            <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
         </footer>
-        <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
     </body>
 </html>
