@@ -1,0 +1,205 @@
+h1{
+    color: red;
+}
+@font-face {
+    font-family:'Roboto';
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+*{
+    font-family: 'Roboto';
+}
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.row{
+    margin: 0;
+}
+.conteiner-fluid{
+    padding: 0;
+}
+.btn-primary{
+    background-color: #F2A340;
+    border: 2px solid #C28008;
+}
+.btn-primary:hover{
+    background-color: #C28008;
+    border-color:#C28008;
+}
+
+/* navbar */
+#navbar img{
+    width: 40px;
+}
+#navbar{
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 0;
+}
+#navbar a{
+    font-size: 14px;
+    color: #757575;
+}
+#navbar a:hover{
+    color: #F2A340;
+}
+/* Search conteiner*/
+#search-conteiner{
+    background-image: url("../img/Banner.jpg");
+     background-size: cover;
+     background-position: center;
+     height: 400px;
+     padding: 50px;
+     text-align: center;
+}
+#search-conteiner h1{
+    color: #F2A340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+#search-conteiner form{
+    width: 50%;
+    margin: 0 auto;
+}
+/* Event list */
+#events-conteiner{
+    padding: 50px;
+}
+#events-conteiner h2{
+    margin-bottom: 10px;
+}
+#events-conteiner .subtitle{
+    color: #757575;
+    margin-bottom: 30px;
+}
+#cards-conteiner{
+    display: flex;
+}
+#events-conteiner .card{
+    flex: 1 1 24%;
+    max-width: 24%;
+    border-radius: 10px;
+    padding: 0;
+    margin: .5%;
+}
+#events-conteiner img{
+    max-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-date .card{
+    font-size: 12px;
+    color: #CCC;
+}
+.card-title{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-participants{
+    font-size: 14px;
+    color: #757575;
+}
+/*Event page*/
+#image-conteiner,
+#info-conteiner{
+    margin-top: 10px;
+}
+#image-conteiner img{
+    border-radius: 10px;
+}
+#image-conteiner h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+#image-conteiner p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+#info-conteiner .alreade-joined-msg{
+    color: #004085;
+    background-color: #CCE5FF;
+    border: 1px solid #88DAFF;
+    margin: 15px 0px;
+    padding: 10px;
+    width: 300px;
+}
+.event-info{
+    display: flex  !important;
+    align-items: center !important;
+}
+.event-info p{
+    gap: 5px;
+    margin: 0;
+    display: flex  !important;
+    align-items: center !important;
+}
+p ion-icon{
+    align-self: baseline;
+    font-size: 1.2rem;
+    color: #F2A340;
+}
+
+.ion-icon{
+    gap: 5px;
+    display: flex  !important;
+    align-items: center !important;
+}
+#image-conteiner h3, #description-conteiner h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+#info-conteiner p{
+    margin: 0;
+}
+#info-conteiner #event-submit{
+    margin: 20px 0;
+}
+#description-conteiner{
+    margin-top: 30px;
+}
+/* Dashboard*/
+.dashboard-title-conteiner{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.dashboard-events-conteiner form{
+    display: inline-block;
+    
+}
+
+.msg{
+    background-color: #D4EDDA;
+    color: #155624;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+    
+}
+/* Edit Page */
+.image-preview{
+    width: 100px;
+    margin: 20px;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin-bottom: 0;
+}
